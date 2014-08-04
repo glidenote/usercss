@@ -1,0 +1,36 @@
+@-moz-document regexp("https://.*.qiita.com/") {
+/* remove header info */
+.team-header-tutorial, .template-select-box { display:none !important }
+
+/* remove sidebar info */
+.span4 { display:none !important }
+
+/* remove footer info */
+.footerContainer_navigation, #footer-content > div > div > div > p { display:none !important }
+
+/* spread main witdh */
+#main > div > div > div.span8 { width: 100% !important }
+
+/* highlight comments icon sytle */
+.fa-comment-o { }
+
+/* highlight status link number */
+.item-status-box ul li a:link, .item-status-box ul li a:visited {
+  color: red !important;
+  font-size: 200%;
+  }
+
+/* change status style */
+.item-status-box ul li span { }
+
+/* change visited link color */
+.item-box-title h1 a:visited, .item-status-box ul li a:visited {
+  color: silver !important;
+   }
+
+/* change hover link color */
+.item-box-title h1 a:hover, .item-status-box ul li a:hover {
+  color: #117ec6 !important;
+   }
+
+}
